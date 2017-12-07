@@ -18,7 +18,7 @@ function my_load_module_breadcrumbs() {
 add_action( 'init', 'my_load_module_breadcrumbs' );
 
 /**
-  Breadcrumb code
+* Breadcrumb code
 */
 
 
@@ -47,7 +47,7 @@ if ( ! function_exists( 'tss_get_breadcrumbs' ) ) {
 		$html .= $separator;
 		// Post
 		if ( is_singular( 'post' ) ) {
-			
+
 			$category = get_the_category( $post->ID );
 			$category_values = array_values( $category );
 			$last_category = end( $category_values );
